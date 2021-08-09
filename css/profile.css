@@ -1,0 +1,229 @@
+/* title */
+#profile .title {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  height: 100px;
+  background: linear-gradient(90deg, #a5ceff, #fff);
+}
+#profile .title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 100px;
+  color: #fff;
+  padding-left: 20px;
+}
+/* profile box */
+#profile .profile_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
+  transform: translate(-50%, -50%);
+}
+/* photo */
+.profile_box .prof_photo {
+  width: 280px;
+  margin: auto auto;
+}
+.profile_box .prof_photo img {
+  width: 100%;
+}
+/* content */
+.profile_box .prof_content {
+  padding-left: 20px;
+}
+.prof_content h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  color: #04005e;
+  margin-bottom: 20px;
+}
+.prof_content .name,
+.edu,
+.contact {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.prof_content .name h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #04005e;
+  padding-left: 80px;
+}
+.prof_content .edu .edu_box {
+  padding-left: 80px;
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-rows: 3fr 7fr;
+}
+.prof_content .edu .edu_box p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: left;
+}
+.prof_content .edu .edu_box .date {
+  grid-column: 1 / 2;
+}
+.prof_content .edu .edu_box .grad {
+  grid-column: 2 / 3;
+}
+.prof_content .contact .inform_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  border: 1px solid #00405e;
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+.prof_content .contact .inform_box ul {
+  width: 250px;
+}
+.prof_content .contact .inform_box ul > li {
+  height: 50px;
+  text-align: center;
+}
+.prof_content .contact .inform_box ul > li:last-child {
+  margin-top: 20px;
+  height: 20px;
+}
+.prof_content .contact .inform_box ul > li > i {
+  font-size: 50px;
+  color: #04005e;
+  text-align: center;
+}
+.prof_content .contact .inform_box ul > li > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #profile .profile_box {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+  }
+  #profile .title {
+    top: 40px;
+    left: 40px;
+    width: 300px;
+    height: 70px;
+  }
+  #profile .title h1 {
+    font-size: 34px;
+    line-height: 70px;
+  }
+  .profile_box .prof_photo {
+    width: 180px;
+  }
+  .profile_box .prof_content {
+    padding-left: 10px;
+  }
+  .prof_content h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .prof_content .name h3 {
+    font-size: 18px;
+    padding-left: 80px;
+  }
+  .prof_content .edu .edu_box {
+    padding-left: 40px;
+  }
+  .prof_content .edu .edu_box p {
+    font-size: 14px;
+  }
+  .prof_content .contact .inform_box {
+    padding: 15px 10px;
+  }
+  .prof_content .contact .inform_box ul {
+    width: 180px;
+  }
+  .prof_content .contact .inform_box ul > li > p {
+    font-size: 12px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  #profile .profile_box {
+    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    top: 55%;
+  }
+  #profile .title {
+    top: 50px;
+    left: 20px;
+    width: 150px;
+    height: 40px;
+  }
+  #profile .title h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .profile_box .prof_photo {
+    width: 130px;
+  }
+  .profile_box .prof_content {
+    padding-left: 0px;
+  }
+  .prof_content h1 {
+    font-size: 14px;
+    margin-bottom: 0px;
+  }
+  .prof_content .name,
+  .edu,
+  .contact {
+    margin-bottom: 10px;
+  }
+  .prof_content .name h3 {
+    font-size: 10px;
+    padding-left: 40px;
+  }
+  .prof_content .edu .edu_box {
+    padding-left: 40px;
+  }
+  .prof_content .edu .edu_box p {
+    font-size: 10px;
+  }
+  .prof_content .contact .inform_box {
+    padding: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .prof_content .contact .inform_box ul {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+  .prof_content .contact .inform_box ul > li {
+    height: 30px;
+    float: left;
+  }
+  .prof_content .contact .inform_box ul > li:last-child {
+    margin-top: 0px;
+    height: 30px;
+    text-align: left;
+  }
+  .prof_content .contact .inform_box ul > li > i {
+    font-size: 25px;
+  }
+  .prof_content .contact .inform_box ul > li > p {
+    font-size: 10px;
+    line-height: 30px;
+  }
+}

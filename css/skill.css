@@ -1,0 +1,123 @@
+#skill {
+  background: #eaf3ff;
+}
+/* title */
+#skill .title {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 500px;
+  height: 100px;
+  background: linear-gradient(90deg, #a5ceff, #eaf3ff);
+}
+#skill .title h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 100px;
+  color: #fff;
+  padding-left: 20px;
+}
+
+/* skill box */
+#skill .sk_content_container {
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sk_content_container .subject {
+  float: left;
+  width: 400px;
+  height: 250px;
+  padding: 15px;
+  border: 1px solid #00405e;
+}
+.sk_content_container .subject h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding: 15px 0px;
+  background: #00405e;
+}
+.sk_content_container .subject ul {
+  width: 100%;
+  margin-top: 20px;
+}
+.sk_content_container .subject ul li {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.sk_content_container .subject ul li i {
+  margin-right: 5px;
+  color: #00405e;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  #skill .sk_content_container {
+    width: 600px;
+  }
+  #skill .title {
+    top: 40px;
+    left: 40px;
+    width: 300px;
+    height: 70px;
+  }
+  #skill .title h1 {
+    font-size: 34px;
+    line-height: 70px;
+  }
+  .sk_content_container .subject {
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+  }
+  .sk_content_container .subject h3 {
+    font-size: 18px;
+    padding: 12px 0px;
+  }
+  .sk_content_container .subject ul li {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  #skill .sk_content_container {
+    width: 300px;
+    top: 55%;
+  }
+  #skill .title {
+    top: 50px;
+    left: 20px;
+    width: 150px;
+    height: 40px;
+  }
+  #skill .title h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  .sk_content_container .subject {
+    width: 150px;
+    height: 145px;
+    padding: 5px;
+  }
+  .sk_content_container .subject h3 {
+    font-size: 12px;
+    padding: 5px 0px;
+  }
+  .sk_content_container .subject ul {
+    margin-top: 5px;
+  }
+  .sk_content_container .subject ul li {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+}
